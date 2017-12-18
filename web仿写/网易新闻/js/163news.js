@@ -147,7 +147,7 @@ $(function() {
 	});
 });
 
-$(document).ready(function() {
+$(function() {
 	$('#dialog_wangyi').mouseover(function() {
 		$('#dialog_wangyi').css({'display': 'block'});
 	});

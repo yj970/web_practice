@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link rel="stylesheet" type="text/css" href="../css/163news.css">
-	    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="../js/jquery.rotate.min.js"></script>
-		<script type="text/javascript" src="../js/163news.js"></script>
-		<title>
-			网易新闻
-		</title>
-	</head>
-	<body>
-	 <div class="top">
-	    <!-- 顶部导航 -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/min.swiper.css">
+	<link rel="stylesheet" type="text/css" href="../css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="../css/163news.css">
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.rotate.min.js"></script>
+	<script type="text/javascript" src="../js/163news.js"></script>
+	<script type="text/javascript" src="../js/swiper.min.js"></script>
+	<script type="text/javascript" src="../js/swiper.js"></script>
+
+
+	<title>
+		网易新闻
+	</title>
+</head>
+<body>
+	<div class="top">
+		<!-- 顶部导航 -->
 		<div class="top_bar">
 			<div class="top_bar_left">
 				<span class="top_bar_span_left span_wangyiyingyong" title="网易应用">
 					网易应用
 				</span>
 				<div class="top_bar_block_1" id="top_bar_block_1_1">
-				<span class="top_bar_span_left">
-					应用
-				</span>
-				<em class="ver_arr" id="ver_arr_1"></em>
+					<span class="top_bar_span_left">
+						应用
+					</span>
+					<em class="ver_arr" id="ver_arr_1"></em>
 				</div>
 			</div>
 			<div class="top_bar_right">
@@ -30,169 +38,169 @@
 				</span>
 				<div class="top_bar_block_1
 				">
-					<div class="top_bar_wangyi">
-					</div>
-				</div>
-				<span class="ver_span">
-				</span>
-				<div class="top_bar_block_1" id="top_bar_block_1_2">
-					<div class="top_bar_vedio">
-					</div>
-					<em class="ver_arr" id="ver_arr_2"></em>
-				</div>
-				<span class="ver_span">
-				</span>
-				<div class="top_bar_block_2
-				" id="top_bar_block_2_1">
-					<div class="top_bar_bohe">
-					</div>
-					<em class="ver_arr" id="ver_arr_3"></em>
-				</div>
-				<span class="ver_span">
-				</span>
-				<div class="top_bar_block_2
-				" id="top_bar_block_2_2">
-					<div class="top_bar_wangyikaola">
-					</div>
-					<em class="ver_arr" id="ver_arr_4"></em>
-				</div>
-				<span class="ver_span">
-				</span>
-				<div class="top_bar_block_2
-				" id="top_bar_block_2_3">
-					<div class="top_bar_yanxuan">
-					</div>
-					<em class="ver_arr" id="ver_arr_5"></em>
-				</div>
-				<span class="ver_span">
-				</span>
-				<div class="top_bar_block_1
-				" id="top_bar_block_1_3">
-					<div class="top_bar_qian">
-					</div>
-					<em class="ver_arr" id="ver_arr_6"></em>
-				</div>
-				<span class="ver_span">
-				</span>
-				<div class="top_bar_block_1
-				" id="top_bar_block_1_4">
-					<div class="top_bar_gouwuche">
-					</div>
-					<em class="ver_arr" id="ver_arr_7"></em>
-				</div>
-				<span class="ver_span">
-				</span>
-				<div class="top_bar_block_1
-				" id="top_bar_block_1_5">
-					<div class="top_bar_duanxin">
-					</div>
-					<em class="ver_arr" id="ver_arr_8"></em>
-				</div>
-				<span class="ver_span">
-				</span>
-				<div class="top_bar_block_2
-				" id="login_in">
-				<span>
-					登录
-				</span>
-				</div>
-				<span class="ver_span">
-				</span>
-				<div class="top_bar_block_3
-				" id="top_bar_block_3_1">
-				<span>
-					注册免费邮箱
-				</span>
-				<em class="ver_arr" id="ver_arr_9"></em>
-				</div>
-				<span class="ver_span">
-				</span>
-				<div class="top_bar_block_1
-				">
-					<div class="top_bar_more">
-					<span></span>
-					<span></span>
-					<span></span>
-					</div>
+				<div class="top_bar_wangyi">
 				</div>
 			</div>
+			<span class="ver_span">
+			</span>
+			<div class="top_bar_block_1" id="top_bar_block_1_2">
+				<div class="top_bar_vedio">
+				</div>
+				<em class="ver_arr" id="ver_arr_2"></em>
+			</div>
+			<span class="ver_span">
+			</span>
+			<div class="top_bar_block_2
+			" id="top_bar_block_2_1">
+			<div class="top_bar_bohe">
+			</div>
+			<em class="ver_arr" id="ver_arr_3"></em>
 		</div>
-		<!-- 顶部导航下发的弹窗 -->
-		<div>
-			<div class="top_bar_dialog" id="dialog_wangyi">
-				<ul>
-					<li><span class="bottom_dashed" id="li_wangyixinwen">网易新闻</span></li>
-					<li><span class="bottom_dashed" id="li_wangyigongkaike">网易公开课</span></li>
-					<li><span class="bottom_dashed" id="li_bohezhibo">薄荷直播</span></li>
-					<li><span class="bottom_dashed" id="li_wangyihongcai">网易红彩</span></li>
-					<li><span class="bottom_dashed" id="li_wangyiyanxuan">网易严选</span></li>
-					<li><span class="bottom_dashed" id="li_youxiangdashi">邮箱大师</span></li>
-					<li><span class="bottom_dashed" id="li_wangyimeixue">网易美学</span></li>
-					<li><span class="bottom_dashed" id="li_wangyiyunketang">网易云课堂</span></li>
-					<li><span class="bottom_dashed" id="li_wangyikaolahaigou">网易考拉海购</span></li>
-					<li><span class="bottom_dashed" id="li_wangyiboluoshiping">网易菠萝视频</span></li>
-				</ul>
-			</div>
-			<div class="top_bar_dialog" id="dialog_vedio">
-				<ul>
-					<li><span class="bottom_dashed" id="">TED</span></li>
-					<li><span class="bottom_dashed" id="">国际名校公开课</span></li>
-					<li><span class="bottom_dashed" id="">中国大学视频公开课</span></li>
-					<li><span class="bottom_dashed" id="">赏课</span></li>
-					<li><span class="bottom_dashed" id="">可汗学院</span></li>
-					<li><span class="bottom_dashed" id="">下载公开课</span></li>
-				</ul>
-			</div>
+		<span class="ver_span">
+		</span>
+		<div class="top_bar_block_2
+		" id="top_bar_block_2_2">
+		<div class="top_bar_wangyikaola">
+		</div>
+		<em class="ver_arr" id="ver_arr_4"></em>
+	</div>
+	<span class="ver_span">
+	</span>
+	<div class="top_bar_block_2
+	" id="top_bar_block_2_3">
+	<div class="top_bar_yanxuan">
+	</div>
+	<em class="ver_arr" id="ver_arr_5"></em>
+</div>
+<span class="ver_span">
+</span>
+<div class="top_bar_block_1
+" id="top_bar_block_1_3">
+<div class="top_bar_qian">
+</div>
+<em class="ver_arr" id="ver_arr_6"></em>
+</div>
+<span class="ver_span">
+</span>
+<div class="top_bar_block_1
+" id="top_bar_block_1_4">
+<div class="top_bar_gouwuche">
+</div>
+<em class="ver_arr" id="ver_arr_7"></em>
+</div>
+<span class="ver_span">
+</span>
+<div class="top_bar_block_1
+" id="top_bar_block_1_5">
+<div class="top_bar_duanxin">
+</div>
+<em class="ver_arr" id="ver_arr_8"></em>
+</div>
+<span class="ver_span">
+</span>
+<div class="top_bar_block_2
+" id="login_in">
+<span>
+	登录
+</span>
+</div>
+<span class="ver_span">
+</span>
+<div class="top_bar_block_3
+" id="top_bar_block_3_1">
+<span>
+	注册免费邮箱
+</span>
+<em class="ver_arr" id="ver_arr_9"></em>
+</div>
+<span class="ver_span">
+</span>
+<div class="top_bar_block_1
+">
+<div class="top_bar_more">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- 顶部导航下发的弹窗 -->
+<div>
+	<div class="top_bar_dialog" id="dialog_wangyi">
+		<ul>
+			<li><span class="bottom_dashed" id="li_wangyixinwen">网易新闻</span></li>
+			<li><span class="bottom_dashed" id="li_wangyigongkaike">网易公开课</span></li>
+			<li><span class="bottom_dashed" id="li_bohezhibo">薄荷直播</span></li>
+			<li><span class="bottom_dashed" id="li_wangyihongcai">网易红彩</span></li>
+			<li><span class="bottom_dashed" id="li_wangyiyanxuan">网易严选</span></li>
+			<li><span class="bottom_dashed" id="li_youxiangdashi">邮箱大师</span></li>
+			<li><span class="bottom_dashed" id="li_wangyimeixue">网易美学</span></li>
+			<li><span class="bottom_dashed" id="li_wangyiyunketang">网易云课堂</span></li>
+			<li><span class="bottom_dashed" id="li_wangyikaolahaigou">网易考拉海购</span></li>
+			<li><span class="bottom_dashed" id="li_wangyiboluoshiping">网易菠萝视频</span></li>
+		</ul>
+	</div>
+	<div class="top_bar_dialog" id="dialog_vedio">
+		<ul>
+			<li><span class="bottom_dashed" id="">TED</span></li>
+			<li><span class="bottom_dashed" id="">国际名校公开课</span></li>
+			<li><span class="bottom_dashed" id="">中国大学视频公开课</span></li>
+			<li><span class="bottom_dashed" id="">赏课</span></li>
+			<li><span class="bottom_dashed" id="">可汗学院</span></li>
+			<li><span class="bottom_dashed" id="">下载公开课</span></li>
+		</ul>
+	</div>
 
-		<div class="top_bar_dialog" id="dialog_login">
-				<input class="input_login" placeholder="网易邮箱/常用邮箱"></input>
-				<input class="input_login" placeholder="请输入密码"></input>
-				<div class="div_login">
-					<em id="safe"></em>
-					<div class="div_safe">
-					     <span>使用</span><span id="span_housekeeper">网易账号管家</span><span>, 全面保护您的账号安全!</span>
-					</div>
-				</div>
-				<div id="login_btn">登录</div>
-				<div class="div_login" id="div_setting">
-					<input type="checkbox"></input>
-					<span id="auto_login">十天内免登陆</span>
-					<span id="forget_psw">忘记密码?</span>
-				</div>
+	<div class="top_bar_dialog" id="dialog_login">
+		<input class="input_login" placeholder="网易邮箱/常用邮箱"></input>
+		<input class="input_login" placeholder="请输入密码"></input>
+		<div class="div_login">
+			<em id="safe"></em>
+			<div class="div_safe">
+				<span>使用</span><span id="span_housekeeper">网易账号管家</span><span>, 全面保护您的账号安全!</span>
 			</div>
 		</div>
+		<div id="login_btn">登录</div>
+		<div class="div_login" id="div_setting">
+			<input type="checkbox"></input>
+			<span id="auto_login">十天内免登陆</span>
+			<span id="forget_psw">忘记密码?</span>
 		</div>
-		<div class="main_body">
-		<div id="navigation">
-			<div id="navagation_1">
-				<span>新闻</span>
-				<span>体育</span>
-				<span>NBA</span>
-				<span>娱乐</span>
-				<span>财经</span>
-				<span>股票</span>
-				<span>汽车</span>
-				<span>科技</span>
-				<span>手机</span>
-				<span>数码</span>
-				<span>女人</span>
-				<span>直播</span>
-				<span>视频</span>
-				<span>旅游</span>
-				<span>房产</span>
-				<span>家居</span>
-				<span>教育</span>
-				<span>读书</span>
-				<span>广东</span>
-				<span>健康</span>
-				<span>彩票</span>
-				<span>车险</span>
-				<span>海淘</span>
-				<span>理财</span>
-				<span id="navagation_1_act">艺术</span>
-			</div>
-			<div id="navagation_logo"></div>
-			<div id="navagation_2">
+	</div>
+</div>
+</div>
+<div class="main_body">
+	<div id="navigation">
+		<div id="navagation_1">
+			<span>新闻</span>
+			<span>体育</span>
+			<span>NBA</span>
+			<span>娱乐</span>
+			<span>财经</span>
+			<span>股票</span>
+			<span>汽车</span>
+			<span>科技</span>
+			<span>手机</span>
+			<span>数码</span>
+			<span>女人</span>
+			<span>直播</span>
+			<span>视频</span>
+			<span>旅游</span>
+			<span>房产</span>
+			<span>家居</span>
+			<span>教育</span>
+			<span>读书</span>
+			<span>广东</span>
+			<span>健康</span>
+			<span>彩票</span>
+			<span>车险</span>
+			<span>海淘</span>
+			<span>理财</span>
+			<span id="navagation_1_act">艺术</span>
+		</div>
+		<div id="navagation_logo"></div>
+		<div id="navagation_2">
 			<ul>
 				<li>首页</li>
 				<li>排行</li>
@@ -208,67 +216,112 @@
 				<li>公益</li>
 				<li id="navagation_2_vedio">媒体</li>
 			</ul>
+		</div>
+	</div>
+	<div id="main_content">
+		<div id="main_content_left">
+			<div id="main_content_left_title">
+				<span class="red_block"></span>
+				<span id="news_attitude">新闻各有态度</span>
+			</div>
+			<div class="main_content_left_content" id="main_content_left_content_1">
+				<em id="main_content_left_content_1_img"></em>
+				<span>"三双王"维斯布鲁克怎么了？</span>
+				<ul>
+					<li>中国人的美好生活里健康最重要</li>
+					<li>有机食品不比普通食物环保和健康</li>
+				</ul>
+			</div>
+			<div class="main_content_left_content">
+				<em id="main_content_left_content_2_img"></em>
+				<span>妖由人兴，神由人造</span>
+				<ul>
+					<li>生死青海湖</li>
+					<li>丘吉尔：没有胜利就没有生存</li>
+				</ul>
+			</div>
+			<div class="main_content_left_content">
+				<em id="main_content_left_content_3_img"></em>
+				<span>杀死那个被性侵的少女</span>
+				<ul>
+					<li>我后悔没有下定决心离开南京</li>
+					<li>我是如何从县局爬到省局</li>
+				</ul>
+			</div>
+			<div class="main_content_left_content">
+				<em id="main_content_left_content_4_img"></em>
+				<span>不好意思，这个世界不值得我洗头</span>
+				<ul>
+					<li>立flag太多的人，总是伤的比较深</li>
+					<li>这款11区游戏让我想起游戏机总被妈</li>
+				</ul>
+			</div>
+			<div class="main_content_left_content">
+				<em id="main_content_left_content_5_img"></em>
+				<span>这片竟看哭了广电审查人员，破格上映！</span>
+				<ul>
+					<li>我居然在央视看过这么高水准的神</li>
+					<li>这部京都神作简单易懂，却是全程</li>
+				</ul>
+			</div>
+			<div class="main_content_left_content">
+				<em id="main_content_left_content_6_img"></em>
+				<span>我居然看两个男孩子秀了27年恋爱</span>
+				<ul>
+					<li>爸妈不让我看这个动画片，怎么</li>
+					<li>糟糕的家庭关系，怎样逼死一个中</li>
+				</ul>
 			</div>
 		</div>
-		<div id="main_content">
-			<div id="main_content_left">
-				<div id="main_content_left_title">
-					<span class="red_block"></span>
-					<span id="news_attitude">新闻各有态度</span>
-				</div>
-				<div class="main_content_left_content" id="main_content_left_content_1">
-					<em id="main_content_left_content_1_img"></em>
-					<span>"三双王"维斯布鲁克怎么了？</span>
-					<ul>
-						<li>中国人的美好生活里健康最重要</li>
-						<li>有机食品不比普通食物环保和健康</li>
-					</ul>
-				</div>
-				<div class="main_content_left_content">
-					<em id="main_content_left_content_2_img"></em>
-					<span>妖由人兴，神由人造</span>
-					<ul>
-						<li>生死青海湖</li>
-						<li>丘吉尔：没有胜利就没有生存</li>
-					</ul>
-				</div>
-				<div class="main_content_left_content">
-					<em id="main_content_left_content_3_img"></em>
-					<span>杀死那个被性侵的少女</span>
-					<ul>
-						<li>我后悔没有下定决心离开南京</li>
-						<li>我是如何从县局爬到省局</li>
-					</ul>
-				</div>
-				<div class="main_content_left_content">
-					<em id="main_content_left_content_4_img"></em>
-					<span>不好意思，这个世界不值得我洗头</span>
-					<ul>
-						<li>立flag太多的人，总是伤的比较深</li>
-						<li>这款11区游戏让我想起游戏机总被妈</li>
-					</ul>
-				</div>
-				<div class="main_content_left_content">
-					<em id="main_content_left_content_5_img"></em>
-					<span>这片竟看哭了广电审查人员，破格上映！</span>
-					<ul>
-						<li>我居然在央视看过这么高水准的神</li>
-						<li>这部京都神作简单易懂，却是全程</li>
-					</ul>
-				</div>
-				<div class="main_content_left_content">
-					<em id="main_content_left_content_6_img"></em>
-					<span>我居然看两个男孩子秀了27年恋爱</span>
-					<ul>
-						<li>爸妈不让我看这个动画片，怎么</li>
-						<li>糟糕的家庭关系，怎样逼死一个中</li>
-					</ul>
-				</div>
+		<div id="main_content_center">
+			<div class="main_content_center_main">
+				<h1>习近平引领中国经济向高质量发展阶段迈进</h1>
+				<div><span>在内地就业港澳台同胞将享住房公积金</span>|<span>发改委回应近期“煤改气”问题</span></div>
+				<div><span>5架中国军机一度飞入韩国“防空识别区”</span>|<span>11月一线城市房价继续降温</span></div>
+				<div><span>江歌案：检方建议判陈世峰20年</span>|<span>检方全盘否认陈世峰所做陈述与辩解</span></div>
 			</div>
-			<div id="main_content_center"></div>
-			<div id="main_content_right"></div>
+			<div class="main_content_center_main">
+				<h1>经济学大咖齐聚2018网易经济学家年会</h1>
+				<div><span>八达岭老虎伤人案伤者：园方不让发声</span>|<span>教师与16岁男生结婚 家长同意</span></div>
+				<div><span>吉林回应“政务大厅员工向记者塞现金”</span>|<span>“狼性团战”跪地互扇耳光</span></div>
+				<div><span>儿子把大明星“女友带回家” 父母愣了</span>|<span>外卖员躲公厕注射毒品致昏迷</span></div>
+			</div>
+			<div id="wangyidujia">
+				<h2>网易独家</h2>
+				<!-- Swiper -->
+			<div class="swiper-container" id="dujia">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" id="swiper_5"></div>
+					<div class="swiper-slide" id="swiper_6"></div>
+					<div class="swiper-slide" id="swiper_7"></div>
+					<div class="swiper-slide" id="swiper_8"></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			</div>
 		</div>
+		<div id="main_content_right">
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" id="swiper_1"></div>
+					<div class="swiper-slide" id="swiper_2"></div>
+					<div class="swiper-slide" id="swiper_3"></div>
+					<div class="swiper-slide" id="swiper_4"></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
 		</div>
-	</body>
+	</div>
+</div>
+</body>
 
 </html>
