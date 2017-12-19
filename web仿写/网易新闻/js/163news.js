@@ -173,4 +173,18 @@ $(function() {
 	$('#dialog_login').mouseout(function() {
 		$('#dialog_login').css({'display': 'none'});
 	});
+	$('#li_more').mouseover(function() {
+		$('#main_content_center_navagation_ul_2').css({'display': 'flex'});
+	});
+	$('#li_more').mouseout(function() {
+		$('#main_content_center_navagation_ul_2').css({'display': 'none'});
+	});
+	$('#main_content_center_navagation_ul_2').mouseover(function() {
+		$('#main_content_center_navagation_ul_2').css({'display': 'flex'});
+	});
+	$('#main_content_center_navagation_ul_2').mouseout(function() {
+		$('#main_content_center_navagation_ul_2').css({'display': 'none'});
+	});
+
+
 });
