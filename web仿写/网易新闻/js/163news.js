@@ -186,5 +186,18 @@ $(function() {
 		$('#main_content_center_navagation_ul_2').css({'display': 'none'});
 	});
 
+	$('#share_1').mouseover(function() {
+		$('#share_navagation_1').css({'display': 'flex'});
+	});
+	$('#share_1').mouseout(function() {
+		$('#share_navagation_1').css({'display': 'none'});
+	});
+	$('#share_navagation_1').mouseover(function() {
+		$('#share_navagation_1').css({'display': 'flex'});
+	});
+	$('#share_navagation_1').mouseout(function() {
+		$('#share_navagation_1').css({'display': 'none'});
+	});
+
 
 });

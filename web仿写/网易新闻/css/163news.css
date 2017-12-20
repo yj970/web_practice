@@ -762,12 +762,14 @@ margin-left: 30px;
 }
 
 .main_content_center_small_content {
+	display: flex;
 	margin-top: 30px;
 }
 
 .main_content_center_small_content span{
 	font-size: 12px;
 	color: #888;
+	line-height: 40px;
 }
 
 .main_content_center_small em {
@@ -779,13 +781,105 @@ margin-left: 30px;
 }
 
 .main_content_center_small .ver {
-		margin-left: 5px;
-		margin-right: -15px;
+		margin-left: 10px;
+		margin-right: -10px;
 }
 
 #main_content_center_small_1{
 		background-image: url(http://cms-bucket.nosdn.127.net/05a8223139db42fe90fa75af1435ce9f20171219120536.png);
 }
 
+
+.main_content_center_small_content_right {
+	display: flex;
+	align-items: center;
+	width: 230px;
+	justify-content: flex-end;
+}
+
+.main_content_center_small_content_right em {
+	width: 36px;
+	height: 26px;
+	display: block;
+	background-image: url(http://static.ws.126.net/f2e/modules/shares/images/sprite0613v3.png);
+	background-position: -196px -125px;
+	background-repeat: no-repeat;
+	background-size: auto;
+	z-index: 1;
+}
+
+.div_share{
+	width: 30px;
+	height: 30px;
+}
+
+.div_share li {
+	list-style: none;
+}
+
+.share {
+	cursor: pointer;
+}
+
+.share_navagation {
+	display: flex;
+	flex-direction: column;
+	/*display: none;*/
+	background: #000;
+	border: 1px solid #1E1E1E;
+	width: 100px;
+	z-index: 99;
+}
+
+.share_navagation li {
+	display: flex;
+	line-height: 24px;
+	height: 24px;
+	margin: 7px;
+}
+
+.main_content_center_small_content_right_follow {
+	display: flex;
+    align-items: center;
+}
+
+.main_content_center_small_content_right_follow em {
+	background-position: -202px -109px;
+	height: 18px;
+	width: 27px;
+	margin-left: 10px;
+}
+
+.main_content_center_small_content_right_follow span {
+	margin-left: 3px;
+}
+
+.main_content_center_small_content_right .yixin {
+	width: 24px;
+	height: 24px;
+	background: url(http://static.ws.126.net/f2e/modules/shares/images/sprite0613v3.png) no-repeat;
+	background-position: -240px -177px;
+}
+
+.main_content_center_small_content_right .weixin {
+	width: 24px;
+	height: 24px;
+	background: url(http://static.ws.126.net/f2e/modules/shares/images/sprite0613v3.png) no-repeat;
+	background-position: -265px -177px;
+}
+
+.main_content_center_small_content_right .weibo {
+	width: 24px;
+	height: 24px;
+	background: url(http://static.ws.126.net/f2e/modules/shares/images/sprite0613v3.png) no-repeat;
+	background-position: -290px -177px;
+}
+
+.main_content_center_small_content_right .qqzone {
+	width: 24px;
+	height: 24px;
+	background: url(http://static.ws.126.net/f2e/modules/shares/images/sprite0613v3.png) no-repeat;
+	background-position: -315px -177px;
+}
 
 
